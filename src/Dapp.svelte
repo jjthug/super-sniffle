@@ -44,9 +44,11 @@
 
 
   	// listen for account changes
-	window.ethereum.on('accountsChanged', accountChangedHandler);
+    if(window.ethereum){
+        window.ethereum.on('accountsChanged', accountChangedHandler);
 
-	window.ethereum.on('chainChanged', chainChangedHandler);
+        window.ethereum.on('chainChanged', chainChangedHandler);
+    }
 
     async function updateEthers() {
         provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -91,7 +93,7 @@
     async function getProof() {
 		try{
             console.log("account =",account);
-		const returnValue = await fetch(`/merkleproof?address=${account}`);
+		const returnValue = await fetch(`/api/merkleproof?address=${account}`);
 		const response = await returnValue.json();
 		console.log("inside whitelist buy");
 		proof = response.data;

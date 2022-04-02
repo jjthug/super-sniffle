@@ -28,6 +28,7 @@
     "crypto-js": "^4.1.1",
     "ethers": "^5.5.4",
     "express": "^4.17.3",
+    "express-rate-limit": "^6.3.0",
     "helmet": "^5.0.2",
     "http": "^0.0.1-security",
     "keccak256": "^1.0.6",
