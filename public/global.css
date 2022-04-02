@@ -1,0 +1,51 @@
+/* 
+====== 
+Fonts
+======
+*/
+@import url("https://fonts.googleapis.com/css?family=Catamaran:300,400&display=swap");
+@font-face {
+  font-family: 'PTMonoRegular';
+  src: url('./fonts/PTMono-Regular.79c58af.woff2');
+}
+
+@font-face {
+  font-family: 'PTMonoBold';
+  src: url('./fonts/PTMono-Bold.bb387bb.woff2');
+}
+
+@font-face {
+  font-family: 'ChakraPetch';
+  src: url('./fonts/ChakraPetch-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lobster';
+  src: url('./fonts/Lobster-Regular.ttf');
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PTMonoRegular', sans-serif;
+  color: white;
+
+}
+
+.container{
+  background-color: rgb(19, 18, 18);
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: auto;
+  /* display: flex; */
+  /* padding: 0 40px; */
+}
+
+/* body {
+  font-family: "Catamaran", sans-serif;
+  color: var(--mainBlack);
+  background: var(--mainGrey);
+  line-height: 1.4;
+  font-size: 1rem;
+  font-weight: 300;
+} */
