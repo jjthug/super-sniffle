@@ -12,7 +12,7 @@ config.env = 'development'
 config.server = {}
 config.server.host = '0.0.0.0'
 config.server.port = 5001
-config.server.cors = ""
+config.server.cors = "http://45.80.153.7:80"
 
 /********************Blockchain NFT*************************/
 config.nft = {}
