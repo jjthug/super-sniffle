@@ -20,16 +20,19 @@ const apiLimiter = rateLimit({
 	legacyHeaders: false, // Disable the `X-RateLimit-*` headers
 });
 
-app.use(cors({origin: config.server.cors}))
+// app.use(cors({origin: config.server.cors}))
 app.use(helmet.xssFilter())
 app.use(helmet.frameguard('deny'))
 app.use(helmet.noSniff());
+// app.use("Content-Type", "application/json");
+
 
 console.log("Environment ======> ", config.env, " <=======")
 
 app.get('/api/merkleproof', merkle.getProof);
 
 app.use(express.static('public'));
+console.log("__dirname",__dirname);
 app.get('*', (req, res) => {
     return res.sendFile(path.resolve(__dirname, '../../public', 'index.html'))
     // return res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
