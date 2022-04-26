@@ -13,15 +13,9 @@ Fonts
   font-family: 'PTMonoBold';
   src: url('./fonts/PTMono-Bold.bb387bb.woff2');
 }
-
-@font-face {
-  font-family: 'ChakraPetch';
-  src: url('./fonts/ChakraPetch-Regular.ttf');
-}
-
 @font-face {
   font-family: 'Lobster';
-  src: url('./fonts/Lobster-Regular.ttf');
+  src: url('./fonts/lobster-v27-latin-regular.woff2');
 }
 * {
   box-sizing: border-box;

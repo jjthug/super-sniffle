@@ -5,8 +5,9 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "startProd": "cross-env APP_ENV=production node ./backend/server/server.js",
-    "startDev": "cross-env APP_ENV=development node ./backend/server/server.js"
+    "startProd": "cross-env APP_ENV=production forever start ./backend/server/server.js",
+    "startDev": "cross-env APP_ENV=development forever start ./backend/server/server.js",
+    "stopDev": "cross-env APP_ENV=development forever stop ./backend/server/server.js"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
